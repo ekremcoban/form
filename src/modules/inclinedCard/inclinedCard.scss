@@ -1,0 +1,27 @@
+@import "../../sass/abstracts/variables";
+
+.row {
+    max-width: $grid-width;
+    margin: 0 auto;
+
+    &:not(:last-child) {
+        margin-bottom: $gutter-vertical;
+    }
+}
+
+.section-book {
+    padding: 15rem 0;
+    background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+}
+
+.book {
+    background-image: linear-gradient(105deg, 
+                                        rgba($color-white, .3) 0%, 
+                                        rgba($color-white, .9) 50%, 
+                                      transparent 0%), 
+                                    url(../../assets/img/isaac.jpg);   
+    background-size: 100%;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, $alpha: .2);
+    height: 25rem;    
+}
